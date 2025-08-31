@@ -40,26 +40,27 @@ public class Array {
 
         // Mltidimensional Array
         
-        // Input
-        // int[][] arr={{1,2,3},{4,5},{6,7,8,9}};
-        int[][] arr=new int[3][3];
+        // Take Input
+        int[][] arr={{1,2,3},{4,5},{6,7,8,9}};
+        // int[][] arr=new int[3][3];
         System.out.println(arr.length);
+        for(int row=0;row<arr.length;row++){
+        // for each col in every row
+            for(int col=0;col<arr[row].length;col++){
+                // arr[row][col]=sc.nextInt();
+                System.out.print(arr[row][col]+" ");
+            }
+            System.out.println();
+        }
+        // Print Output
         // for(int row=0;row<arr.length;row++){
-        //     // for each col in every row
         //     for(int col=0;col<arr[row].length;col++){
-        //         // arr[row][col]=in.nextInt();
         //         System.out.print(arr[row][col]+" ");
+        //         System.out.println(Arrays.toString(arr[row]));
         //     }
         //     System.out.println();
         // }
 
-        // Output
-        // for(int row=0;row<arr.length;row++){
-        //     for(int col=0;col<arr[row].length;col++){
-        //         System.out.println(Arrays.toString(arr[row])+" ");
-        //     }
-        //     System.out.println();
-        // }
 
         // OR
         // for(int row=0;row<arr.length;row++){
@@ -67,7 +68,7 @@ public class Array {
         // }
 
         // OR
-        // for(int[] a:arr){
+        // for(int[] a:arr){ // every single element in the array itself is an array
         //     System.out.println(Arrays.toString(a));
         // }
 
